@@ -1,0 +1,4 @@
+SMTP_HOST="smtp.yourhost.com"
+SMTP_PORT=465
+MAIL_USERNAME="mail@yourhost.com"
+MAIL_PASSWORD="yourpasword"
