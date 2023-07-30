@@ -1,0 +1,19 @@
+{
+    "name": "leonan/phpmailer",
+    "description": "sample of phpmailer",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leonan Müller",
+            "email": "leomullerluiz@gmail.com"
+        }
+    ]
+}
