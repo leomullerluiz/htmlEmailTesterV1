@@ -12,6 +12,6 @@ jobs:
       uses: webitsbr/github-to-ftp@1.0.1
       with:
         server: ${{ secrets.server }}
-        server-dir: "/"
+        server-dir: ""
         username: ${{ secrets.username }}
         password: ${{ secrets.password }} 
