@@ -2,8 +2,8 @@
 
 require 'vendor/autoload.php';
 
-//$mail = new app\classes\Email;
-//$mail->check("Assunto", "Corpo do E-mail", "Corpo alternativo, usado para clientes non-HTML ");
+$mail = new app\classes\Email;
+$mail->sendEmail("ENVIANDO E-MAIL A PARTIR DO SERVIDOR", "Corpo do E-mail", "Corpo alternativo, usado para clientes non-HTML ");
 
 require "app/functions/pages.php";
 
@@ -63,7 +63,8 @@ require "app/functions/pages.php";
 
     <div class="container">
         <?php
-        require loadPage();
+            require loadPage();
+
         ?>
     </div>
 

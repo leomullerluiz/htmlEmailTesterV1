@@ -11,7 +11,7 @@
     class Email extends \PHPMailer\PHPMailer\PHPMailer{
 
 
-        public function check($subject, $body, $altBody){
+        public function sendEmail($subject, $body, $altBody){
 
             
             try {
