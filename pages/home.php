@@ -10,7 +10,7 @@
     <title>Bootstrap demo</title>
     <style>
       body{
-          background: #000000;
+          background: #ff00ff;
       }
     </style>
   </head>
@@ -23,14 +23,7 @@
         <!-- ====================== TEXTAREA ====================================== -->
     </div>
     <div class="col">
-        Col 2
+    <iframe id="htmlOutput"></iframe>
+
     </div>
 </div>
-<script>
-    var editor = CodeMirror.fromTextArea(htmlInput, {
-        lineNumbers: true,
-        mode: "text/html",
-        theme: "lucario"
-    });
-    editor.setSize(700, 500);
-</script>

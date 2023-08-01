@@ -22,17 +22,17 @@ require "app/functions/pages.php";
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CodeMirror -->
-    <link rel="stylesheet" href="pages/res/css/codemirror.css">
-    <link rel="stylesheet" href="pages/res/css/lucario.css">
-    <link rel="stylesheet" href="pages/res/css/show-hint.css">
-    <script src="pages/res/js/codemirror.js"></script>
-    <script src="pages/res/js/show-hint.js"></script>
-  <script src="pages/res/js/xml-hint.js"></script>
-  <script src="pages/res/js/html-hint.js"></script>
-  <script src="pages/res/js/xml.js"></script>
-  <script src="pages/res/js/javascript.js"></script>
-  <script src="pages/res/js/css.js"></script>
-  <script src="pages/res/js/htmlmixed.js"></script>
+    <link rel="stylesheet" href="pages/res/css/codemirror/codemirror.css">
+    <link rel="stylesheet" href="pages/res/css/codemirror/lucario.css">
+    <link rel="stylesheet" href="pages/res/css/codemirror/show-hint.css">
+    <script src="pages/res/js/codemirror/codemirror.js"></script>
+    <script src="pages/res/js/codemirror/show-hint.js"></script>
+  <script src="pages/res/js/codemirror/xml-hint.js"></script>
+  <script src="pages/res/js/codemirror/html-hint.js"></script>
+  <script src="pages/res/js/codemirror/xml.js"></script>
+  <script src="pages/res/js/codemirror/javascript.js"></script>
+  <script src="pages/res/js/codemirror/css.js"></script>
+  <script src="pages/res/js/codemirror/htmlmixed.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="pages/res/css/style.css">
@@ -109,6 +109,7 @@ require "app/functions/pages.php";
 
 
 </body>
+<script src="pages/res/js/app.js"></script>
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
