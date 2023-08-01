@@ -15,8 +15,28 @@ require "app/functions/pages.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Email Tester</title>
+    <link rel="shortcut icon" href="pages/res/img/html_icon.svg" type="image/x-icon">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c75c18e7a6.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CodeMirror -->
+    <link rel="stylesheet" href="pages/res/css/codemirror.css">
+    <link rel="stylesheet" href="pages/res/css/lucario.css">
+    <link rel="stylesheet" href="pages/res/css/show-hint.css">
+    <script src="pages/res/js/codemirror.js"></script>
+    <script src="pages/res/js/show-hint.js"></script>
+  <script src="pages/res/js/xml-hint.js"></script>
+  <script src="pages/res/js/html-hint.js"></script>
+  <script src="pages/res/js/xml.js"></script>
+  <script src="pages/res/js/javascript.js"></script>
+  <script src="pages/res/js/css.js"></script>
+  <script src="pages/res/js/htmlmixed.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="pages/res/css/style.css">
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -61,12 +81,12 @@ require "app/functions/pages.php";
 
 
 
-    <div class="container">
+    <section class="main">
         <?php
-            require loadPage();
+        require loadPage();
 
         ?>
-    </div>
+    </section>
 
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 border-top mt-auto">
@@ -89,6 +109,7 @@ require "app/functions/pages.php";
 
 
 </body>
+<!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>

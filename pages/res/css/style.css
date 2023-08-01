@@ -1,0 +1,10 @@
+body{
+    overflow: hidden;
+}
+textarea {
+  resize: none !important;
+}
+.htmlInput{
+    max-width: 100%;
+    min-height: 100vh;
+}
