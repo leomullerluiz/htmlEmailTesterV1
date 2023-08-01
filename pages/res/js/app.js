@@ -4,17 +4,15 @@ var textEditor = CodeMirror.fromTextArea(htmlInput, {
     mode: "text/html",
     theme: "lucario"
 });
-textEditor.setSize(700, 500);
-
+textEditor.setSize(700, 1000);
 
 //Load Html from textAre
 function compile() {
-    var html = document.getElementById("htmlInput");
     var code = document.getElementById("htmlOutput").contentWindow.document;
   
     document.body.onkeyup = function() {
       code.open();
-      code.writeln(html.value);
+      code.writeln(textEditor.getValue());
       code.close();
     };
   }
