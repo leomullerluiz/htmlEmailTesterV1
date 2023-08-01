@@ -51,7 +51,7 @@ require "app/functions/pages.php";
                     <li><a href="?page=home" class="nav-link px-2 link-secondary">Home</a></li>
                     <li><a href="#" class="nav-link px-2 link-body-emphasis">Docs</a></li>
                     <li><a href="#" class="nav-link px-2 link-body-emphasis">Saved Templates</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Help</a></li>
+                    <li><a href="https://leomullerluiz.com/projects/htmlemailtester/" target="_blank" class="nav-link px-2 link-body-emphasis">View Online</a></li>
                     <li><a href="#" class="nav-link px-2 link-body-emphasis">About</a></li>
                 </ul>
 
