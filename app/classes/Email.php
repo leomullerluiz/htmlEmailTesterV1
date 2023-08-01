@@ -5,7 +5,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
 
-    $dotenv = \Dotenv\Dotenv::createImmutable("../phpmailer");
+    $dotenv = \Dotenv\Dotenv::createImmutable("./");
     $dotenv->load();    
 
     class Email extends \PHPMailer\PHPMailer\PHPMailer{
