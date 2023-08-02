@@ -23,7 +23,7 @@
         <!-- ====================== TEXTAREA ====================================== -->
     </div>
     <div class="col">
-    <iframe id="htmlOutput"></iframe>
+    <iframe class="htmlOutput" id="htmlOutput"></iframe>
 
     </div>
 </div>
