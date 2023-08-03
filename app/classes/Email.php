@@ -5,18 +5,22 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
 
-    $dotenv = \Dotenv\Dotenv::createImmutable("./");
-    $dotenv->load();    
+    //$dotenv = \Dotenv\Dotenv::createImmutable("./");
+    //$dotenv->load();    
 
     class Email extends \PHPMailer\PHPMailer\PHPMailer{
+        public $dotenv;
 
+        public function __construct(){
+            $this->dotenv = \Dotenv\Dotenv::createImmutable(__DIR__, 'smtp.env');
+            $this->dotenv->load();
+        }
 
-        public function sendEmail($subject, $body, $altBody){
+        public function forward($subject, $body, $altBody){
 
-            
-            try {
+            // try {
                 //Server settings
-                $this->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+                $this->SMTPDebug = 0;                      //Enable verbose debug output
                 $this->isSMTP();                                            //Send using SMTP
                 $this->Host       = $_ENV['SMTP_HOST'];                     //Set the SMTP server to send through
                 $this->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -40,9 +44,9 @@
                 $this->AltBody = $altBody;
             
                 $this->send();
-
-            } catch (Exception $e) {
-                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-            }
+            // } catch (Exception $e) {
+            //     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            // }
         }
+
     }

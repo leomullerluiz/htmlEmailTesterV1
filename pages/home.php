@@ -1,4 +1,4 @@
-<form action="" method="POST" class="htmlInputForm">
+<form action="app/functions/sendEmail.php" method="POST" class="htmlInputForm">
     <div class="row">
         <div class="col">
             <a class="btn btn-dark" onclick="compile()">Run</a>

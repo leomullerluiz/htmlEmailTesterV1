@@ -1,3 +1,4 @@
+rename file to 'smtp.env'
 SMTP_HOST="smtp.yourhost.com"
 SMTP_PORT=465
 MAIL_USERNAME="mail@yourhost.com"
