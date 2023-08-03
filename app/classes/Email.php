@@ -16,7 +16,7 @@
             $this->dotenv->load();
         }
 
-        public function forward($subject, $body, $altBody){
+        public function forward($subject, $body, $altBody, $recipientEmail){
 
             // try {
                 //Server settings
@@ -31,7 +31,7 @@
             
                 //Recipients
                 $this->setFrom('mailer@leomullerluiz.com', 'Mailer');
-                $this->addAddress('leomullerluiz@gmail.com');              //Name is optional
+                $this->addAddress($recipientEmail);              //Name is optional
                 $this->addReplyTo('mailer@leomullerluiz.com', 'Auto Mailer');
                 //$mail->addCC('cc@example.com');
                 //$mail->addBCC('bcc@example.com');

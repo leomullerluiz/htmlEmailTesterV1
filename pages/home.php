@@ -1,14 +1,14 @@
 <form action="app/functions/sendEmail.php" method="POST" class="htmlInputForm">
     <div class="row">
         <div class="col">
-            <a class="btn btn-dark" onclick="compile()">Run</a>
+            <a class="btn btn-dark" onclick="compile()">Carregar HTML</a>
         </div>
         <div class="col">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon3">E-mail:</span>
                 </div>
-                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                <input type="email" class="form-control" id="recipientEmail" name="recipientEmail" aria-describedby="basic-addon3" required>
             </div>
         </div>
         <div class="col">
