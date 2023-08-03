@@ -11,12 +11,7 @@ textEditor.setSize(700, "auto");
 //Load Html from textAre
 function compile() {
   var code = document.getElementById("htmlOutput").contentWindow.document;
-
-  document.body.onkeyup = function () {
-    code.open();
-    code.writeln(textEditor.getValue());
-    code.close();
-  };
+  code.open();
+  code.writeln(textEditor.getValue());
+  code.close();
 }
-
-compile();
