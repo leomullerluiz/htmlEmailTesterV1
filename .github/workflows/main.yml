@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+      branches:
+        - main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -12,6 +15,6 @@ jobs:
       uses: webitsbr/github-to-ftp@1.0.1
       with:
         server: ${{ secrets.server }}
-        server-dir: ""
+        server-dir: "/projects/htmlemailtester/"
         username: ${{ secrets.username }}
         password: ${{ secrets.password }} 
