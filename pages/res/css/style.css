@@ -16,3 +16,7 @@ textarea {
     margin: 0 auto;
     display: block;
 }
+
+.CodeMirror{
+    width: 100% !important;
+}
