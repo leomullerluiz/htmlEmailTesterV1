@@ -73,4 +73,5 @@ return array(
     'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     'app\\classes\\Connection' => $baseDir . '/app/classes/Connection.php',
     'app\\classes\\Email' => $baseDir . '/app/classes/Email.php',
+    'app\\classes\\User' => $baseDir . '/app/classes/User.php',
 );
