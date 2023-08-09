@@ -1,3 +1,4 @@
+<?php require 'sections/logged_header.php'; ?>
 <form action="app/functions/sendEmail.php" method="POST" class="htmlInputForm">
     <div class="row">
         <div class="col">
@@ -46,3 +47,4 @@
         </div>
     </div>
 </form>
+<?php require 'sections/footer.php'; ?>
